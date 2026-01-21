@@ -14,7 +14,7 @@ import com.google.android.material.button.MaterialButton
 class MainActivity : AppCompatActivity() {
     private lateinit var binding: ActivityMainBinding
     private lateinit var buttons: Array<MaterialButton>
-    private var board = CharArray(9) { ' ' }
+    private var board = CharArray(9) { empty }
     private var currentPlayer = X
     private var winConditions = arrayOf(
         intArrayOf(0, 1, 2), intArrayOf(3, 4, 5), intArrayOf(6, 7, 8),
